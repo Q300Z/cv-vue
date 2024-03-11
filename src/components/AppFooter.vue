@@ -23,7 +23,7 @@
           —
           <a
             class="text-decoration-none on-surface"
-            href="https://vuetifyjs.com/about/licensing/"
+            href="https://raw.githubusercontent.com/Q300Z/cv-vue/main/LICENSE"
             rel="noopener noreferrer"
             target="_blank"
           >
