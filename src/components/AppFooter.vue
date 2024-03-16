@@ -1,5 +1,5 @@
 <template>
-  <v-footer app height="40">
+  <v-footer app height="30" >
     <a
       v-for="item in items"
       :key="item.title"
@@ -14,22 +14,30 @@
         :size="item.icon === '$vuetify' ? 24 : 16"
       />
     </a>
-
-        <div
-          class="text-caption text-disabled"
-          style="position: absolute; right: 16px;"
-        >
-          &copy; 2024-{{ (new Date()).getFullYear() }} <span class="d-none d-sm-inline-block">Thomas Boutin</span>
-          —
-          <a
-            class="text-decoration-none on-surface"
-            href="https://raw.githubusercontent.com/Q300Z/cv-vue/main/LICENSE"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            MIT License
-          </a>
-        </div>
+    <a
+      class="d-inline-block mx-2 social-link"
+      href="#"
+      rel="noopener noreferrer"
+      title="Toggle theme"
+      @click="toggleTheme"
+    >
+      <v-icon size="16" :icon="theme.global.current.value.dark  ? 'mdi-weather-sunny' : 'mdi-weather-night'"/>
+    </a>
+    <div
+      class="text-caption text-disabled"
+      style="position: absolute; right: 16px;"
+    >
+      &copy; 2024-{{ (new Date()).getFullYear() }} <span class="d-none d-sm-inline-block">Thomas Boutin</span>
+      —
+      <a
+        class="text-decoration-none on-surface"
+        href="https://raw.githubusercontent.com/Q300Z/cv-vue/main/LICENSE"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        MIT License
+      </a>
+    </div>
   </v-footer>
 </template>
 
@@ -41,6 +49,14 @@ const items = [
     href: 'https://github.com/Q300Z',
   }
 ]
+
+import {useTheme} from 'vuetify'
+
+const theme = useTheme()
+
+function toggleTheme() {
+  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+}
 </script>
 
 <style lang="sass" scoped>

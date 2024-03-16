@@ -1,12 +1,13 @@
 <script lang="ts" setup>
 import {useTitle} from "@vueuse/core";
 
-useTitle('Rapport de stage 2')
+useTitle('Rapport de stage 1')
 </script>
 
 <template>
+  <!--Tableau de synthèse-->
   <v-container>
-  <h1>Rapport de stage 2</h1>
+  <h1>Tableaux de synthèse</h1>
   </v-container>
 </template>
 

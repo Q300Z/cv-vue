@@ -1,10 +1,9 @@
 <template>
   <v-app>
     <AppNavbar v-if="router.currentRoute.value.path !== homePage.path"/>
-    <v-main>
+    <v-main scrollable>
       <router-view/>
     </v-main>
-
     <AppFooter/>
   </v-app>
 </template>
@@ -13,6 +12,7 @@
 //
 import router from "../router";
 import {useAppStore} from "../stores/app";
+import {ref} from "vue";
 
 const appStore = useAppStore()
 
