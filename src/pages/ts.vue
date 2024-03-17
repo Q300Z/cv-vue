@@ -3,7 +3,7 @@ import {useTitle} from "@vueuse/core";
 import {ItemSynthese} from "../models/itemSynthese";
 import {ref} from "vue";
 
-useTitle('Rapport de stage 1')
+useTitle('Tableaux de synthèse')
 
 const selected = ref<ItemSynthese | null>(null)
 
