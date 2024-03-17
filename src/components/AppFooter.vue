@@ -42,6 +42,9 @@
 </template>
 
 <script lang="ts" setup>
+import {useAppStore} from "../stores/app";
+import {useTheme} from 'vuetify'
+
 const items = [
   {
     title: 'GitHub',
@@ -50,12 +53,11 @@ const items = [
   }
 ]
 
-import {useTheme} from 'vuetify'
-
+const appStore = useAppStore()
 const theme = useTheme()
 
 function toggleTheme() {
-  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+  appStore.setThemeSelected(theme.global.current.value.dark ? 'light' : 'dark')
 }
 </script>
 

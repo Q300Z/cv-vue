@@ -26,7 +26,6 @@
             :subtitle="item.subtitle"
             :title="item.title"
             :to="item.path"
-            append-icon="mdi-open-in-new"
             class="py-4"
             color="surface-variant"
             rounded="lg"

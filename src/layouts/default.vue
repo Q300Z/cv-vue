@@ -18,3 +18,4 @@ const appStore = useAppStore()
 
 const homePage = ref(appStore.getSitePages.find(page => page.path === '/'))
 </script>
+

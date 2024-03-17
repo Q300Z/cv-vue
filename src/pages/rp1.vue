@@ -6,6 +6,7 @@ useTitle('Rapport de stage 1')
 
 <template>
   <v-container>
+
     <!-- Section "L'entreprise" -->
     <v-row>
       <v-col cols="12">

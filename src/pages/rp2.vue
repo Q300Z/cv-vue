@@ -351,7 +351,8 @@ useTitle('Rapport de stage 2')
                 <v-img
                   alt="Page de connexion du nouveau site"
                   contain
-                  src="/assets/oldLoginScreen.png"/>
+                  src="/assets/oldLoginScreen.png"
+                />
               </v-col>
             </v-row>
           </v-card-item>
