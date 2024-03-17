@@ -14,20 +14,20 @@ export const useAppStore = defineStore('app', {
         subtitle: 'Accédez au tableau de synthèse',
         path: 'ts',
         icon: 'mdi-table',
-        download: '/assets/synthese.xlsx'
+        download: 'assets/synthese.xlsx'
       },
       {
         title: 'Rapport de stage 1',
         subtitle: 'Accédez au rapport de stage de première année',
         path: 'rp1',
         icon: 'mdi-text-box-outline',
-        download: '/assets/attestation2.pdf'
+        download: 'assets/attestation2.pdf'
       }, {
         title: 'Rapport de stage 2',
         subtitle: 'Accédez au rapport de stage de seconde année',
         path: 'rp2',
         icon: 'mdi-text-box-outline',
-        download: '/assets/attestation2.pdf'
+        download: 'assets/attestation2.pdf'
       }] as Page[],
     themeSelected: useStorage('themeSelected', ''),
     ItemSynthese: [{
@@ -54,7 +54,7 @@ export const useAppStore = defineStore('app', {
             title: 'Stage de seconde année',
             date: '15/01/2024 – 23/02/2024',
             description: "Durant ma seconde année, j'ai effectué un stage dans l'entreprise Ouvrez l'oeil dans le but de faire un site web de type CRM",
-            image: [{src: '/assets/logoOuvrezloeilBanniere.png', alt: 'Ouvrez l\'oeil'}]
+            image: [{src: 'assets/logoOuvrezloeilBanniere.png', alt: 'Ouvrez l\'oeil'}]
           },
           {
             title: 'Projets de fin d’année',
