@@ -9,6 +9,7 @@ useTitle('Rapport de stage 1')
     <!-- Section "L'entreprise" -->
     <v-row>
       <v-col cols="12">
+        <h1 class="mb-2">L'entreprise</h1>
         <v-card class="mb-3">
           <v-img
             class="align-end align-self-center"
@@ -18,7 +19,7 @@ useTitle('Rapport de stage 1')
           >
 
           </v-img>
-          <v-card-title>L'entreprise</v-card-title>
+          <v-card-title>Contexte</v-card-title>
           <v-card-text>
             <p><b>Dates du stage :</b> Du 23/05/2023 au 21/07/2023</p>
             <p>La raison sociale de l'entreprise est Flazio. Elle est une société de technologie spécialisée dans le
@@ -98,27 +99,55 @@ useTitle('Rapport de stage 1')
     </v-row>
 
     <!-- Section "Organisation du projet" -->
+
     <v-row>
       <v-col cols="12">
+        <h1 class="mb-2">Organisation du projet</h1>
         <v-card class="mb-3">
-          <v-card-title>Organisation du projet (Semaine 2)</v-card-title>
+          <v-card-title>Mode de Transmission du travail à faire (Outils, réunions, … etc)</v-card-title>
           <v-card-text>
-            <p><b>Mode de Transmission du travail à faire (Outils, réunions, … etc) :</b></p>
             <p>Au cours de la deuxième semaine de mon stage chez Flazio, le mode de transmission du travail à faire
               s'est principalement effectué à l'oral. J'ai eu des réunions régulières avec mon responsable pour discuter
               des tâches assignées. Ces réunions nous ont permis de clarifier les attentes et de partager des
               informations importantes.</p>
-            <p><b>Outils de suivi utilisés :</b></p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card class="mb-3">
+          <v-card-title>Outils de suivi utilisés</v-card-title>
+          <v-card-text>
             <p>Pour le suivi de mes tâches et des modifications apportées aux fichiers, nous avons utilisé GitHub. Cet
               outil de gestion de versions nous a permis de collaborer de manière efficace et de garder une trace des
               changements effectués. J'ai créé un référentiel dédié à mes tâches. Cela a facilité le travail
               d'équipe.</p>
-            <p><b>Outils de gestion de projets utilisés :</b></p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card class="mb-3">
+          <v-card-title>Outils de gestion de projets utilisés</v-card-title>
+          <v-card-text>
             <p>Pour la gestion du projet, nous avons également utilisé GitHub. Nous avons créé des tickets pour chaque
               tâche à effectuer, en précisant les détails et les exigences spécifiques. Ces tickets nous ont permis de
               suivre l'avancement des tâches assigné à chacun, d'assigner d’autres tâches et de collaborer de manière
               organisée. J'ai pu mettre à jour l'état des tickets au fur et à mesure de l'avancement du projet.</p>
-            <p><b>Autres outils liés à l'organisation du projet :</b></p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card class="mb-3">
+          <v-card-title>Autres outils liés à l'organisation du projet </v-card-title>
+          <v-card-text>
             <p>Pendant la deuxième semaine, nous n'avons pas utilisé d'autres outils spécifiques liés à l'organisation
               du projet. Cependant, notre responsable a partagé des documents et des ressources supplémentaires via
               Google Drive, ce qui nous a permis d'accéder facilement aux informations nécessaires au projet.</p>
@@ -130,19 +159,37 @@ useTitle('Rapport de stage 1')
     <!-- Section "Description du projet ou des missions" -->
     <v-row>
       <v-col cols="12">
+        <h1 class="mb-2">Description du projet ou des missions</h1>
         <v-card class="mb-3">
-          <v-card-title>Description du projet ou des missions (Semaine 3)</v-card-title>
+          <v-card-title>Objectif</v-card-title>
           <v-card-text>
-            <p><b>Création d'un tableau de gestion des bénéfices, des dépenses et des bilans</b></p>
-            <p><b>Description détaillée de chaque mission :</b></p>
-            <p><b>Besoins, raisons et objectifs :</b></p>
+            <p>Création d'un tableau de gestion des bénéfices, des dépenses et des bilans</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <h2 class="mb-2">Description détaillée de chaque mission</h2>
+        <v-card class="mb-3">
+          <v-card-title>Besoins, raisons et objectifs</v-card-title>
+          <v-card-text>
             <p>L'objectif de cette mission est de créer un tableau de gestion des bénéfices, des dépenses et des bilans
               pour l'année à venir. L'entreprise souhaite disposer d'un outil interactif qui permettra de visualiser et
               d'analyser ces données financières de manière claire et efficace. L'utilisation d'Ag Grid, une
               bibliothèque JavaScript pour la création de grilles de données, a été choisie pour sa flexibilité et ses
               fonctionnalités avancées.</p>
-            <p><b>Environnement technologique du projet ou de la mission :</b></p>
-            <p>L'environnement technologique du projet se compose des éléments suivants :</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card class="mb-3">
+          <v-card-title>Environnement technologique du projet ou de la mission</v-card-title>
+          <v-card-text>
             <p>- SQL : La base de données sera utilisée pour stocker les données financières, y compris les bénéfices,
               les dépenses et les bilans. <br>
               - PHP : Le langage PHP sera utilisé pour manipuler les données de la base de données et les préparer à
@@ -151,16 +198,45 @@ useTitle('Rapport de stage 1')
               gérer l'affichage et l'interaction des données. <br>
               - Ag Grid : Cette bibliothèque JavaScript sera utilisée pour créer la grille de données interactive et
               ajouter des fonctionnalités avancées telles que le tri, le filtrage, la pagination, etc.</p>
-            <p><b>Description du travail réalisé avec preuves (copies d'écran) :</b></p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card class="mb-3">
+          <v-card-title>Description du travail réalisé avec preuves (copies d'écran)</v-card-title>
+          <v-card-text>
             <p>Notre mission consiste à développer un tableau interactif en utilisant Ag Grid, une bibliothèque
               JavaScript spécialisée dans la création de grilles de données. Ce tableau aura pour objectif d'afficher
               les bénéfices, les dépenses, les bilans et les prévisions pour l'année à venir. Pour ce faire, nous
               recevrons les bases de données de l'entreprise, que nous manipulons à l'aide de PHP, puis l’affichent à
               l'aide de JavaScript.</p>
-            <p>Cette tâche s'inscrit dans une architecture 3 tiers, où nous aurons : <br>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card class="mb-3">
+          <v-card-title>Architecture de l'application</v-card-title>
+          <v-card-text>
+            <p>
               La couche de stockage avec une base de données SQL <br>
               La couche back-end avec PHP pour traiter les données <br>
               La couche front-end avec JavaScript, HTML et CSS pour l'interface utilisateur.</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card class="mb-3">
+          <v-card-title>Autres technologie utilisé</v-card-title>
+          <v-card-text>
             <p>Grâce à Ag Grid, nous allons créer trois "tableaux" qui affichent les dépenses, les revenus et les bilans
               en fonction du temps. Nous ajouterons différentes fonctionnalités pour permettre une visualisation
               flexible des données, telles que la possibilité de les afficher mois par mois ou année par année, de
@@ -173,11 +249,12 @@ useTitle('Rapport de stage 1')
       </v-col>
     </v-row>
 
+
     <!-- Section "Conclusion" -->
     <v-row>
       <v-col cols="12">
         <v-card>
-          <v-card-title>Conclusion (Dernière semaine)</v-card-title>
+          <v-card-title>Conclusion</v-card-title>
           <v-card-text>
             <p>Durant cette dernière semaine de mon stage chez Flazio, j'ai poursuivi le travail sur la construction de
               la base de données et du système d'authentification. Bien que le projet ne soit pas encore terminé, j'ai
