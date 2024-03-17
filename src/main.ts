@@ -15,6 +15,12 @@ import {createApp} from 'vue'
 
 const app = createApp(App)
 
+app.config.errorHandler = (err, instance, info) => {
+  console.error(err)
+  console.info(info)
+  console.debug(instance)
+}
+
 registerPlugins(app)
 
 app.mount('#app')
