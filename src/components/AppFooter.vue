@@ -1,5 +1,5 @@
 <template>
-  <v-footer app height="30" >
+  <v-footer app height="30">
     <a
       v-for="item in items"
       :key="item.title"
@@ -21,7 +21,7 @@
       title="Toggle theme"
       @click="toggleTheme"
     >
-      <v-icon size="16" :icon="theme.global.current.value.dark  ? 'mdi-weather-sunny' : 'mdi-weather-night'"/>
+      <v-icon :icon="theme.global.current.value.dark  ? 'mdi-weather-sunny' : 'mdi-weather-night'" size="16"/>
     </a>
     <div
       class="text-caption text-disabled"

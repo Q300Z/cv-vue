@@ -78,21 +78,31 @@ useTitle('Rapport de stage 1')
 
           <v-card-title>Environnement technologique de l’entreprise</v-card-title>
           <v-card-text>
-              <v-list>
-                <li class="ma-2"><b>Matériel :</b> Flazio utilise des ordinateurs de bureau et des serveurs pour ses opérations internes et pour
-                  héberger les sites web de ses clients.</li>
-                <li class="ma-2"><b>Outils et logiciels :</b> L'entreprise utilise une combinaison d'outils de développement logiciel, tels que
-                  des environnements de développement intégrés (IDE) comme Visual Studio Code, des systèmes de contrôle de
-                  version comme Git, des outils de gestion de projets tels que Jira, et d'autres logiciels spécifiques au
-                  développement web.</li>
-                <li class="ma-2"><b>Langages :</b> Flazio utilise plusieurs langages de programmation pour le développement de ses produits,
-                  notamment HTML, CSS, JavaScript, PHP, et MySQL pour la gestion des bases de données.</li>
-                <li class="ma-2"><b>Architecture :</b> L'architecture des applications développées par Flazio repose sur une approche orientée
-                  objet et suit les principes de conception de logiciel modulaire pour permettre une maintenance et une
-                  évolutivité efficaces.</li>
-                <li class="ma-2"><b>Serveurs :</b> Flazio utilise des serveurs dédiés et des services d'hébergement cloud pour héberger les
-                  sites web de ses clients, assurant ainsi une disponibilité et des performances optimales.</li>
-              </v-list>
+            <v-list>
+              <li class="ma-2"><b>Matériel :</b> Flazio utilise des ordinateurs de bureau et des serveurs pour ses
+                opérations internes et pour
+                héberger les sites web de ses clients.
+              </li>
+              <li class="ma-2"><b>Outils et logiciels :</b> L'entreprise utilise une combinaison d'outils de
+                développement logiciel, tels que
+                des environnements de développement intégrés (IDE) comme Visual Studio Code, des systèmes de contrôle de
+                version comme Git, des outils de gestion de projets tels que Jira, et d'autres logiciels spécifiques au
+                développement web.
+              </li>
+              <li class="ma-2"><b>Langages :</b> Flazio utilise plusieurs langages de programmation pour le
+                développement de ses produits,
+                notamment HTML, CSS, JavaScript, PHP, et MySQL pour la gestion des bases de données.
+              </li>
+              <li class="ma-2"><b>Architecture :</b> L'architecture des applications développées par Flazio repose sur
+                une approche orientée
+                objet et suit les principes de conception de logiciel modulaire pour permettre une maintenance et une
+                évolutivité efficaces.
+              </li>
+              <li class="ma-2"><b>Serveurs :</b> Flazio utilise des serveurs dédiés et des services d'hébergement cloud
+                pour héberger les
+                sites web de ses clients, assurant ainsi une disponibilité et des performances optimales.
+              </li>
+            </v-list>
           </v-card-text>
         </v-card>
       </v-col>
@@ -146,7 +156,7 @@ useTitle('Rapport de stage 1')
     <v-row>
       <v-col cols="12">
         <v-card class="mb-3">
-          <v-card-title>Autres outils liés à l'organisation du projet </v-card-title>
+          <v-card-title>Autres outils liés à l'organisation du projet</v-card-title>
           <v-card-text>
             <p>Pendant la deuxième semaine, nous n'avons pas utilisé d'autres outils spécifiques liés à l'organisation
               du projet. Cependant, notre responsable a partagé des documents et des ressources supplémentaires via

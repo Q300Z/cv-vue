@@ -7,7 +7,7 @@ useTitle('Rapport de stage 1')
 <template>
   <!--Tableau de synthèse-->
   <v-container>
-  <h1>Tableaux de synthèse</h1>
+    <h1>Tableaux de synthèse</h1>
   </v-container>
 </template>
 

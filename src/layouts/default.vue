@@ -4,7 +4,7 @@
     <v-main scrollable>
       <router-view/>
     </v-main>
-    <AppFooter/>
+    <AppFooter v-if="router.currentRoute.value.path === homePage.path"/>
   </v-app>
 </template>
 
