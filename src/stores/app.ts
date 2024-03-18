@@ -48,19 +48,29 @@ export const useAppStore = defineStore('app', {
             title: 'Stage de première année',
             date: '23/06/2023 – 21/07/2023',
             description: 'Réalisation en cours de formation',
-            image: []
+            image: [
+              {src: 'assets/stage1/LoginPage.png', alt: 'Page de connection'},
+              {src: 'assets/stage1/LoginPage.png', alt: 'Page de d\'enregistrement'},
+              {src: 'assets/stage1/TablePage.png', alt: 'Tableau de bord'},
+              {src: 'assets/stage1/TablePageWithSelectedElement.png', alt: 'Tableau de bord avec élément sélectionné'},
+            ],
+            link: 'https://github.com/Flazio-AgGrid/flazio-aggrid-site'
           },
           {
             title: 'Stage de seconde année',
             date: '15/01/2024 – 23/02/2024',
             description: "Durant ma seconde année, j'ai effectué un stage dans l'entreprise Ouvrez l'oeil dans le but de faire un site web de type CRM",
-            image: [{src: 'assets/logoOuvrezloeilBanniere.png', alt: 'Ouvrez l\'oeil'}]
+            image: [
+              {src: 'assets/stage2/logoOuvrezloeilBanniere.png', alt: 'Ouvrez l\'oeil'},
+              {src: 'assets/stage2/newLoginScreen.png', alt: 'Page de login'}
+            ]
           },
           {
             title: 'Projets de fin d’année',
             date: '12/03/24',
             description: 'Réalisation en cours de formation',
-            image: []
+            image: [],
+            link: 'https://github.com/ProjetBDH'
           }
         ]
       },
@@ -71,13 +81,8 @@ export const useAppStore = defineStore('app', {
             title: 'Mise en ligne du Portfolio',
             date: '23/01/2023 – 30/01/2023',
             description: 'Réalisation en cours de formation',
-            image: []
-          },
-          {
-            title: 'LinkedIn',
-            date: '10/01/23',
-            description: 'Réalisation en cours de formation',
-            image: []
+            image: [{src: 'assets/portfolio/homePage.png', alt: 'Portfolio'}],
+            link: 'https://q300z.github.io/cv-vue/'
           }
         ]
       },
@@ -88,7 +93,8 @@ export const useAppStore = defineStore('app', {
             title: 'W3C (html/css)',
             date: '16/11/2022 – 23/11/2022',
             description: 'Réalisation en cours de formation',
-            image: []
+            image: [{src: 'assets/w3c/w3c.png', alt: 'W3C'}],
+            link: 'https://validator.w3.org'
           },
           {
             title: 'RGPD',

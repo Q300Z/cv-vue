@@ -14,7 +14,7 @@ useTitle('Rapport de stage 2')
         <v-card class="mb-3">
           <v-img
             cover
-            src="/assets/logoOuvrezloeilBanniere.png"
+            src="/assets/stage2/logoOuvrezloeilBanniere.png"
             width="45%"
           >
 
@@ -75,7 +75,8 @@ useTitle('Rapport de stage 2')
                   variant="text"
                 >
                   <template v-slot:prepend>
-                    <img alt="Logo d'Ouvrez l'oeil" height="48" src="/assets/logoOuvrezloeil.jpg" width="48"/>
+                    <!--suppress CheckImageSize -->
+                    <img alt="Logo d'Ouvrez l'oeil" height="48" src="/assets/stage2/logoOuvrezloeil.jpg"/>
                   </template>
                   <v-overlay
                     contained
@@ -345,25 +346,25 @@ useTitle('Rapport de stage 2')
               <v-col cols="3">
                 <ImageZoom
                   alt="Page de connexion du nouveau site"
-                  src="/cv-vue/assets/newLoginScreen.png"/>
+                  src="assets/stage2/newLoginScreen.png"/>
               </v-col>
               <v-col cols="3">
                 <ImageZoom
                   alt="Page de connexion de l'ancien site"
-                  src="/cv-vue/assets/oldLoginScreen.png"/>
+                  src="assets/stage2/oldLoginScreen.png"/>
               </v-col>
               <v-col cols="3">
                 <ImageZoom
                   alt="Code de la page de connexion 1"
-                  src="/cv-vue/assets/code1LoginScreen.png"
                   height="200"
+                  src="assets/stage2/code1LoginScreen.png"
                 />
               </v-col>
               <v-col cols="3">
                 <ImageZoom
                   alt="Code de la page de connexion 2 - Formulaire de connexion"
-                  src="/cv-vue/assets/code2LoginScreen.png"
                   height="200"
+                  src="assets/stage2/code2LoginScreen.png"
                 />
               </v-col>
             </v-row>
@@ -385,7 +386,7 @@ useTitle('Rapport de stage 2')
               <v-col cols="3">
                 <ImageZoom
                   alt="Composant liste"
-                  src="/cv-vue/assets/composantListe.png"
+                  src="assets/stage2/composantListe.png"
                 />
               </v-col>
             </v-row>
