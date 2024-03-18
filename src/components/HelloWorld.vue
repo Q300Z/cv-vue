@@ -27,9 +27,9 @@
             :to="item.path"
             class="py-4"
             color="surface-variant"
+            min-width="300"
             rounded="lg"
             variant="text"
-            min-width="300"
           >
             <v-overlay
               contained

@@ -342,17 +342,15 @@ useTitle('Rapport de stage 2')
           <v-card-item>
             <v-row>
               <v-col cols="3">
-                <v-img
+                <ImageZoom
                   alt="Page de connexion du nouveau site"
                   contain
-                  src="/assets/newLoginScreen.png"/>
+                  src="/cv-vue/assets/newLoginScreen.png"/>
               </v-col>
               <v-col cols="3">
-                <v-img
-                  alt="Page de connexion du nouveau site"
-                  contain
-                  src="/assets/oldLoginScreen.png"
-                />
+                <ImageZoom
+                  alt="Page de connexion de l'ancien site"
+                  src="/cv-vue/assets/oldLoginScreen.png"/>
               </v-col>
             </v-row>
           </v-card-item>
@@ -371,10 +369,10 @@ useTitle('Rapport de stage 2')
           <v-card-item>
             <v-row>
               <v-col cols="3">
-                <v-img
+                <ImageZoom
                   alt="Composant liste"
-                  contain
-                  src="/assets/composantListe.png"/>
+                  src="/cv-vue/assets/composantListe.png"
+                />
               </v-col>
             </v-row>
           </v-card-item>

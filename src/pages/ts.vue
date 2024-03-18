@@ -8,7 +8,7 @@ useTitle('Tableaux de synthèse')
 const selected = ref<ItemSynthese | null>(null)
 
 function selectedTrigger(item: ItemSynthese) {
-  console.log(item)
+  // console.log(item)
   selected.value = item
 }
 </script>
@@ -19,7 +19,7 @@ function selectedTrigger(item: ItemSynthese) {
     <v-col cols="3">
       <ListSynthese @selected="selectedTrigger"/>
     </v-col>
-    <v-col v-if="selected" cols="6">
+    <v-col v-if="selected">
       <v-container>
         <v-code>{{ selected }}</v-code>
         <v-card variant="text">
