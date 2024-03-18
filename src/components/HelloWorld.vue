@@ -1,7 +1,7 @@
 <template>
-  <v-container class="fill-height">
+  <v-container>
     <v-responsive
-      class="align-centerfill-height mx-auto"
+      class="align-center fill-height mx-auto"
       max-width="900"
     >
       <v-img
@@ -19,8 +19,7 @@
       <div class="py-4"/>
 
       <v-row>
-        <v-col v-for="item in appStore.getSitePages.filter(page => page.path !== '/')" :key="item.path"
-               cols="6">
+        <v-col v-for="item in appStore.getSitePages.filter(page => page.path !== '/')" :key="item.path">
           <v-card
             :prepend-icon="item.icon"
             :subtitle="item.subtitle"
@@ -30,6 +29,7 @@
             color="surface-variant"
             rounded="lg"
             variant="text"
+            min-width="300"
           >
             <v-overlay
               contained
