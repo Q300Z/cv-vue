@@ -340,17 +340,31 @@ useTitle('Rapport de stage 2')
               technologie.</p>
           </v-card-text>
           <v-card-item>
-            <v-row>
+            <v-row align="center" dense>
+
               <v-col cols="3">
                 <ImageZoom
                   alt="Page de connexion du nouveau site"
-                  contain
                   src="/cv-vue/assets/newLoginScreen.png"/>
               </v-col>
               <v-col cols="3">
                 <ImageZoom
                   alt="Page de connexion de l'ancien site"
                   src="/cv-vue/assets/oldLoginScreen.png"/>
+              </v-col>
+              <v-col cols="3">
+                <ImageZoom
+                  alt="Code de la page de connexion 1"
+                  src="/cv-vue/assets/code1LoginScreen.png"
+                  height="200"
+                />
+              </v-col>
+              <v-col cols="3">
+                <ImageZoom
+                  alt="Code de la page de connexion 2 - Formulaire de connexion"
+                  src="/cv-vue/assets/code2LoginScreen.png"
+                  height="200"
+                />
               </v-col>
             </v-row>
           </v-card-item>
