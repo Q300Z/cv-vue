@@ -5,7 +5,7 @@ const props = defineProps(['src', 'alt', 'width', 'height'])
 </script>
 
 <template>
-  <v-dialog absolute>
+  <v-dialog absolute max-width="80vw">
     <template v-slot:activator="{ props: activatorProps }">
       <!--      {{ props }}-->
       <v-img
@@ -24,7 +24,7 @@ const props = defineProps(['src', 'alt', 'width', 'height'])
           <v-img
             :alt="props.alt"
             :src="props.src"
-            height="75vh"
+            max-height="60vh"
             v-bind="isActive"
           />
         </v-card-item>
