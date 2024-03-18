@@ -6,7 +6,7 @@ import {useTheme} from 'vuetify'
 
 const appStore = useAppStore()
 
-const drawer = ref(true)
+const drawer = ref(false)
 
 const router = useRouter()
 
@@ -50,6 +50,7 @@ function toggleTheme() {
 
   <v-navigation-drawer
     v-model="drawer"
+    temporary
   >
     <v-list nav>
       <v-list-item
