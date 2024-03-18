@@ -6,7 +6,7 @@ import {ItemGroupSynthese} from "../models/itemSynthese";
 
 export const useAppStore = defineStore('app', {
   state: () => ({
-    SiteName: 'Site Internet',
+    SiteName: 'Portfolio',
     SitePages: [
       {title: 'Home', path: '/', icon: 'mdi-home'},
       {
