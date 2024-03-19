@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import {useTitle} from "@vueuse/core";
-import {ItemSynthese} from "../models/itemSynthese";
-import {ref} from "vue";
+import { useTitle } from "@vueuse/core";
+import { ItemSynthese } from "../models/itemSynthese";
+import { ref } from "vue";
 
 useTitle('Tableaux de synthèse')
 
@@ -17,20 +17,23 @@ function selectedTrigger(item: ItemSynthese) {
   <!--Tableau de synthèse-->
   <v-row>
     <v-col cols="3">
-      <ListSynthese @selected="selectedTrigger"/>
+      <ListSynthese @selected="selectedTrigger" />
     </v-col>
     <v-col v-if="selected">
       <v-container>
-        <v-code>{{ selected }}</v-code>
+        <!-- <v-code>{{ selected }}</v-code> -->
         <v-card variant="text">
-          <v-img v-for="image in selected.image" v-if="selected.image.length > 0" :key="image.alt" :alt="image.alt"
-                 :src="image.src"
-                 height="300"
-                 width="100%"
-          />
           <v-card-title>{{ selected.title }}</v-card-title>
-          <v-card-subtitle>{{ selected.date }}</v-card-subtitle>
-          <v-card-text>{{ selected.description }}</v-card-text>
+          <v-card-subtitle>Date : {{ selected.date }}</v-card-subtitle>
+          <v-card-text>
+            <p>Description : {{ selected.description }}</p>
+            <p v-if="selected.link">Liens : <a :href="selected.link">{{ selected.link }}</a></p>
+          </v-card-text>
+          <v-row v-if="selected.image.length > 0">
+            <v-col v-for="image in selected.image" :key="image.alt">
+              <ImageZoom :alt="image.alt" :src="image.src" height="300" width="100%" />
+            </v-col>
+          </v-row>
         </v-card>
       </v-container>
     </v-col>
