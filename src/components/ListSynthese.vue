@@ -1,11 +1,14 @@
 <script lang="ts" setup>
 import {useAppStore} from "../stores/app";
 import {ref} from "vue";
+import {ItemSynthese} from "../models/itemSynthese";
 
 const appStore = useAppStore();
 const itemSynthese = ref(appStore.getItemSynthese);
 
-const emits = defineEmits(['selected']);
+function setItemSynthese(item: ItemSynthese) {
+  appStore.CurrentItemSynthese = item;
+}
 </script>
 
 <template>
@@ -16,7 +19,7 @@ const emits = defineEmits(['selected']);
         v-for="(child, i) in group.children"
         :key="i"
         :title="child.title"
-        @click="emits('selected',child)"
+        @click="setItemSynthese(child)"
       />
       <v-divider></v-divider>
     </v-card>

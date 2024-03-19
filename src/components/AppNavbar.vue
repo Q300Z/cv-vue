@@ -7,6 +7,7 @@ import {useTheme} from 'vuetify'
 const appStore = useAppStore()
 
 const drawer = ref(false)
+const ts_drawer = ref(true)
 
 const router = useRouter()
 
@@ -36,16 +37,13 @@ function toggleTheme() {
 <template>
   <v-app-bar :title="nameCurrentPage" density="compact">
     <template v-slot:prepend>
-      <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"/>
     </template>
     <v-spacer></v-spacer>
-    <v-btn v-if="downloadButton" :href="downloadButton()" icon text="Attestation de stage"
-           title="Attestation de stage">
-      <v-icon>mdi-download</v-icon>
-    </v-btn>
-    <v-btn icon text="Changer le theme" title="Changer le theme" @click="toggleTheme">
-      <v-icon>{{ theme.global.current.value.dark ? 'mdi-weather-sunny' : 'mdi-weather-night' }}</v-icon>
-    </v-btn>
+    <v-btn v-if="downloadButton" :href="downloadButton()" icon="mdi-download" text="Attestation de stage"
+           title="Attestation de stage"/>
+    <v-btn :icon="theme.global.current.value.dark ? 'mdi-weather-sunny' : 'mdi-weather-night'" text="Changer le theme"
+           title="Changer le theme" @click="toggleTheme"/>
   </v-app-bar>
 
   <v-navigation-drawer
@@ -64,6 +62,24 @@ function toggleTheme() {
       />
     </v-list>
   </v-navigation-drawer>
+
+
+  <v-navigation-drawer
+    v-if="router.currentRoute.value.path === '/ts'"
+    v-model="ts_drawer"
+  >
+    <ListSynthese/>
+  </v-navigation-drawer>
+
+  <v-fab
+    v-if="router.currentRoute.value.path === '/ts'"
+    :icon="ts_drawer?'mdi-menu-open':'mdi-menu-close'"
+    location="bottom left"
+    appear
+    app
+    @click="ts_drawer = !ts_drawer"
+  ></v-fab>
+
 </template>
 
 <style lang="sass" scoped>
