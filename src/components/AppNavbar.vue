@@ -67,6 +67,7 @@ function toggleTheme() {
   <v-navigation-drawer
     v-if="router.currentRoute.value.path === '/ts'"
     v-model="ts_drawer"
+    width="350"
   >
     <ListSynthese/>
   </v-navigation-drawer>
