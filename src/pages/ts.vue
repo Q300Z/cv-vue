@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import {useTitle} from "@vueuse/core";
-import {ItemSynthese} from "../models/itemSynthese";
-import {computed, onUnmounted, ref, watch} from "vue";
-import {useAppStore} from "../stores/app";
+import {ItemSynthese} from "@/models/itemSynthese";
+import {computed, ComputedRef, onUnmounted} from "vue";
+import {useAppStore} from "@/stores/app";
 
 useTitle('Tableaux de synthèse')
 
 const appStore = useAppStore()
 
-const selected = computed(() => appStore.getCurrentItemSynthese)
+const selected: ComputedRef<ItemSynthese> = computed(() => appStore.getCurrentItemSynthese)
 
 onUnmounted(() => {
   appStore.CurrentItemSynthese = {} as ItemSynthese
@@ -19,7 +19,7 @@ onUnmounted(() => {
   <!--Tableau de synthèse-->
   <v-container>
     <!--    <v-code>{{ selected }}</v-code>-->
-    <v-card variant="text" v-if="selected.title">
+    <v-card v-if="selected.title" variant="text">
       <v-card-title>{{ selected.title }}</v-card-title>
       <v-card-subtitle>Date : {{ selected.date }}</v-card-subtitle>
       <v-card-text>
@@ -36,9 +36,9 @@ onUnmounted(() => {
     <v-empty-state
       v-else
       headline="Whoops, 404"
-      title="Pas de détails à afficher."
-      text="Veuillez sélectionner un élément dans le tableau de synthèse pour afficher les détails."
       image="@/assets/logo.png"
+      text="Veuillez sélectionner un élément dans le tableau de synthèse pour afficher les détails."
+      title="Pas de détails à afficher."
     ></v-empty-state>
   </v-container>
 </template>

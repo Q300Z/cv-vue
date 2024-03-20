@@ -75,10 +75,10 @@ function toggleTheme() {
   <v-fab
     v-if="router.currentRoute.value.path === '/ts'"
     :icon="ts_drawer?'mdi-menu-open':'mdi-menu-close'"
-    location="bottom left"
-    appear
     app
-    @click="ts_drawer = !ts_drawer"
+    appear
+    location="bottom left"
+    @click.stop="ts_drawer = !ts_drawer"
   ></v-fab>
 
 </template>

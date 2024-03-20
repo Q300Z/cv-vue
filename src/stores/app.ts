@@ -21,7 +21,7 @@ export const useAppStore = defineStore('app', {
         subtitle: 'Accédez au rapport de stage de première année',
         path: 'rp1',
         icon: 'mdi-text-box-outline',
-        download: 'assets/attestation2.pdf'
+        download: 'assets/attestation1.pdf'
       }, {
         title: 'Rapport de stage 2',
         subtitle: 'Accédez au rapport de stage de seconde année',
