@@ -37,49 +37,29 @@ function toggleTheme() {
 <template>
   <v-app-bar :title="nameCurrentPage" density="compact">
     <template v-slot:prepend>
-      <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"/>
+      <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer" />
     </template>
     <v-spacer></v-spacer>
-    <v-btn v-if="downloadButton" :href="downloadButton()" icon="mdi-download" text="Attestation de stage"
-           title="Attestation de stage"/>
+    <v-btn v-if="downloadButton" :href="downloadButton()" target="_blank" icon="mdi-download"
+      text="Attestation de stage" title="Attestation de stage" />
     <v-btn :icon="theme.global.current.value.dark ? 'mdi-weather-sunny' : 'mdi-weather-night'" text="Changer le theme"
-           title="Changer le theme" @click="toggleTheme"/>
+      title="Changer le theme" @click="toggleTheme" />
   </v-app-bar>
 
-  <v-navigation-drawer
-    v-model="drawer"
-    temporary
-  >
+  <v-navigation-drawer v-model="drawer" temporary>
     <v-list nav>
-      <v-list-item
-        v-for="item in appStore.getSitePages"
-        :key="item.title"
-        :prepend-icon="item.icon"
-        :subtitle="item.subtitle || ''"
-        :title="item.title"
-        :to="item.path"
-        link
-      />
+      <v-list-item v-for="item in appStore.getSitePages" :key="item.title" :prepend-icon="item.icon"
+        :subtitle="item.subtitle || ''" :title="item.title" :to="item.path" link />
     </v-list>
   </v-navigation-drawer>
 
 
-  <v-navigation-drawer
-    v-if="router.currentRoute.value.path === '/ts'"
-    v-model="ts_drawer"
-    width="350"
-  >
-    <ListSynthese/>
+  <v-navigation-drawer v-if="router.currentRoute.value.path === '/ts'" v-model="ts_drawer" width="350">
+    <ListSynthese />
   </v-navigation-drawer>
 
-  <v-fab
-    v-if="router.currentRoute.value.path === '/ts'"
-    :icon="ts_drawer?'mdi-menu-open':'mdi-menu-close'"
-    app
-    appear
-    location="bottom left"
-    @click.stop="ts_drawer = !ts_drawer"
-  ></v-fab>
+  <v-fab v-if="router.currentRoute.value.path === '/ts'" :icon="ts_drawer?'mdi-menu-open':'mdi-menu-close'" app appear
+    location="bottom left" @click.stop="ts_drawer = !ts_drawer"></v-fab>
 
 </template>
 
