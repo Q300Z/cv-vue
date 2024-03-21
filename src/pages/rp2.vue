@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {useTitle} from "@vueuse/core";
+import { useTitle } from "@vueuse/core";
 
 useTitle('Rapport de stage 2')
 
@@ -12,11 +12,7 @@ useTitle('Rapport de stage 2')
       <v-col cols="12">
         <h1 class="mb-2">L'entreprise</h1>
         <v-card class="mb-3">
-          <v-img
-            cover
-            src="/assets/stage2/logoOuvrezloeilBanniere.png"
-            width="45%"
-          >
+          <v-img cover src="/assets/stage2/logoOuvrezloeilBanniere.png" width="45%">
 
           </v-img>
           <v-card-title>Contexte</v-card-title>
@@ -38,53 +34,76 @@ useTitle('Rapport de stage 2')
           <v-card-item>
             <v-row>
               <v-col cols="6">
-                <v-card
-                  append-icon="mdi-open-in-new"
-                  color="surface-variant"
-                  href="geo:49.44754,1.03014?z=19"
-                  rounded="lg"
-                  subtitle="Emplacement d'Ouvrez l'oeil sur OpenStreetMap"
-                  title="Localisation Ouvrez l'oeil"
-                  variant="text">
-                  <v-overlay
-                    contained
-                    model-value
-                    opacity=".06"
-                    persistent
-                    scrim="primary"
-                  />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="geo:49.44754,1.03014?z=19"
+                  rounded="lg" subtitle="Emplacement d'Ouvrez l'oeil sur OpenStreetMap"
+                  title="Localisation Ouvrez l'oeil" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
                   <v-card-item>
                     <iframe height="350"
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=1.0287585854530337%2C49.446747380935456%2C1.031521260738373%2C49.44832728385031&amp;layer=mapnik&amp;marker=49.447537338757094%2C1.0301399230957031"
-                            style="border: 1px solid black"
-                            width="100%"></iframe>
-                    <br/><small><a
-                    href="https://www.openstreetmap.org/?mlat=49.44754&amp;mlon=1.03014#map=19/49.44754/1.03014">Afficher
-                    une carte plus grande en version web</a></small>
+                      src="https://www.openstreetmap.org/export/embed.html?bbox=1.0287585854530337%2C49.446747380935456%2C1.031521260738373%2C49.44832728385031&amp;layer=mapnik&amp;marker=49.447537338757094%2C1.0301399230957031"
+                      style="border: 1px solid black" width="100%"></iframe>
+                    <br /><small><a
+                        href="https://www.openstreetmap.org/?mlat=49.44754&amp;mlon=1.03014#map=19/49.44754/1.03014">Afficher
+                        une carte plus grande en version web</a></small>
                   </v-card-item>
                 </v-card>
               </v-col>
               <v-col cols="4">
-                <v-card
-                  append-icon="mdi-open-in-new"
-                  color="surface-variant"
-                  href="https://ouvrezloeil.com"
-                  rounded="lg"
-                  subtitle="Page officiel d'Ouvrez l'oeil"
-                  title="Ouvrez l'oeil"
-                  variant="text"
-                >
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://ouvrezloeil.com"
+                  rounded="lg" subtitle="Page officiel d'Ouvrez l'oeil" title="Ouvrez l'oeil" variant="text">
                   <template v-slot:prepend>
                     <!--suppress CheckImageSize -->
-                    <img alt="Logo d'Ouvrez l'oeil" height="48" src="/assets/stage2/logoOuvrezloeil.jpg"/>
+                    <img alt="Logo d'Ouvrez l'oeil" height="48" src="/assets/stage2/logoOuvrezloeil.jpg" />
                   </template>
-                  <v-overlay
-                    contained
-                    model-value
-                    opacity=".06"
-                    persistent
-                    scrim="primary"
-                  />
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-card-item>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card class="mb-3">
+          <v-card-title>Les clients</v-card-title>
+          <v-card-item>
+            <v-row>
+              <v-col cols="3">
+                <ImageZoom alt="Le 6eme sens - restaurant"
+                  src="https://ouvrezloeil.com/images/clients/ClientLogo01.png" />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://ouvrezloeil.com/#clients"
+                  image="" rounded="lg" subtitle="Site web" title="Le 6eme sens - restaurant" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
+                </v-card>
+              </v-col>
+              <v-col cols="3">
+                <ImageZoom alt="La Fabrik" src="https://ouvrezloeil.com/images/clients/ClientLogo02.png" />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://ouvrezloeil.com/#clients"
+                  rounded="lg" subtitle="Site web" title="La Fabrik" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
+                </v-card>
+              </v-col>
+              <v-col cols="3">
+                <ImageZoom alt="My pub" src="https://ouvrezloeil.com/images/clients/ClientLogo03.png" />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://ouvrezloeil.com/#clients"
+                  rounded="lg" subtitle="Site web" title="My pub" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
+                </v-card>
+              </v-col>
+              <v-col cols="3">
+                <ImageZoom alt="Kyriad Hotel" src="https://ouvrezloeil.com/images/clients/ClientLogo04.png" />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://ouvrezloeil.com/#clients"
+                  rounded="lg" subtitle="Site web" title="Kyriad Hotel" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
+                </v-card>
+              </v-col>
+              <v-col cols="3">
+                <ImageZoom alt="Galeries Dartoux" src="https://ouvrezloeil.com/images/clients/ClientLogo05.png" />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://ouvrezloeil.com/#clients"
+                  rounded="lg" subtitle="Site web" title="Galeries Dartoux" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
                 </v-card>
               </v-col>
             </v-row>
@@ -151,43 +170,33 @@ useTitle('Rapport de stage 2')
           <v-card-item>
             <v-row>
               <v-col cols="3">
-                <v-card
-                  append-icon="mdi-open-in-new"
-                  color="surface-variant"
-                  href="https://fr.vuejs.org"
-                  prepend-icon="mdi-vuejs"
-                  rounded="lg"
-                  subtitle="Site officiel de Vue.js"
-                  title="Vue.js"
-                  variant="text"
-                >
-                  <v-overlay
-                    contained
-                    model-value
-                    opacity=".06"
-                    persistent
-                    scrim="primary"
-                  />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://fr.vuejs.org"
+                  prepend-icon="mdi-vuejs" rounded="lg" subtitle="Site officiel de Vue.js" title="Vue.js"
+                  variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
                 </v-card>
               </v-col>
               <v-col cols="3">
-                <v-card
-                  append-icon="mdi-open-in-new"
-                  color="surface-variant"
-                  href="https://vuetifyjs.com/fr/"
-                  prepend-icon="mdi-vuetify"
-                  rounded="lg"
-                  subtitle="Site officiel de Vuetify"
-                  title="Vuetify"
-                  variant="text"
-                >
-                  <v-overlay
-                    contained
-                    model-value
-                    opacity=".06"
-                    persistent
-                    scrim="primary"
-                  />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://vuetifyjs.com/fr/"
+                  prepend-icon="mdi-vuetify" rounded="lg" subtitle="Site officiel de Vuetify" title="Vuetify"
+                  variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
+                </v-card>
+              </v-col>
+              <v-col cols="3">
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://www.figma.com" rounded="lg"
+                  subtitle="Site officiel de Figma" title="Figma" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
+                  <template v-slot:prepend>
+                    <img alt="Pinia" height="24" src="/assets/Figma-Icon.svg" width="24" />
+                  </template>
+                </v-card>
+              </v-col>
+              <v-col cols="3">
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://trello.com"
+                  prepend-icon="mdi-trello" rounded="lg" subtitle="Site officiel de Trello" title="Trello"
+                  variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
                 </v-card>
               </v-col>
             </v-row>
@@ -209,46 +218,20 @@ useTitle('Rapport de stage 2')
           <v-card-item>
             <v-row>
               <v-col cols="3">
-                <v-card
-                  append-icon="mdi-open-in-new"
-                  color="surface-variant"
-                  href="https://pinia.vuejs.org"
-                  rounded="lg"
-                  subtitle="Site officiel de Pinia"
-                  title="Pinia"
-                  variant="text"
-                >
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://pinia.vuejs.org"
+                  rounded="lg" subtitle="Site officiel de Pinia" title="Pinia" variant="text">
                   <template v-slot:prepend>
-                    <img alt="Pinia" height="24" src="https://pinia.vuejs.org/logo.svg" width="24"/>
+                    <img alt="Pinia" height="24" src="https://pinia.vuejs.org/logo.svg" width="24" />
                   </template>
 
-                  <v-overlay
-                    contained
-                    model-value
-                    opacity=".06"
-                    persistent
-                    scrim="primary"
-                  />
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
                 </v-card>
               </v-col>
               <v-col cols="3">
-                <v-card
-                  append-icon="mdi-open-in-new"
-                  color="surface-variant"
-                  href="https://router.vuejs.org"
-                  prepend-icon="mdi-vuejs"
-                  rounded="lg"
-                  subtitle="Site officiel de Vue Router"
-                  title="Vue Router"
-                  variant="text"
-                >
-                  <v-overlay
-                    contained
-                    model-value
-                    opacity=".06"
-                    persistent
-                    scrim="primary"
-                  />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://router.vuejs.org"
+                  prepend-icon="mdi-vuejs" rounded="lg" subtitle="Site officiel de Vue Router" title="Vue Router"
+                  variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
                 </v-card>
               </v-col>
             </v-row>
@@ -268,23 +251,10 @@ useTitle('Rapport de stage 2')
           <v-card-item>
             <v-row>
               <v-col cols="3">
-                <v-card
-                  append-icon="mdi-open-in-new"
-                  color="surface-variant"
-                  href="https://www.typescriptlang.org"
-                  prepend-icon="mdi-language-typescript"
-                  rounded="lg"
-                  subtitle="Site officiel de Typescript"
-                  title="Typescript"
-                  variant="text"
-                >
-                  <v-overlay
-                    contained
-                    model-value
-                    opacity=".06"
-                    persistent
-                    scrim="primary"
-                  />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://www.typescriptlang.org"
+                  prepend-icon="mdi-language-typescript" rounded="lg" subtitle="Site officiel de Typescript"
+                  title="Typescript" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
                 </v-card>
               </v-col>
             </v-row>
@@ -307,23 +277,9 @@ useTitle('Rapport de stage 2')
           <v-card-item>
             <v-row>
               <v-col cols="3">
-                <v-card
-                  append-icon="mdi-open-in-new"
-                  color="surface-variant"
-                  href="https://www.npmjs.com/package/axios"
-                  prepend-icon="mdi-npm"
-                  rounded="lg"
-                  subtitle="Page NPM de Axios"
-                  title="Axios"
-                  variant="text"
-                >
-                  <v-overlay
-                    contained
-                    model-value
-                    opacity=".06"
-                    persistent
-                    scrim="primary"
-                  />
+                <v-card append-icon="mdi-open-in-new" color="surface-variant" href="https://www.npmjs.com/package/axios"
+                  prepend-icon="mdi-npm" rounded="lg" subtitle="Page NPM de Axios" title="Axios" variant="text">
+                  <v-overlay contained model-value opacity=".06" persistent scrim="primary" />
                 </v-card>
               </v-col>
             </v-row>
@@ -344,28 +300,17 @@ useTitle('Rapport de stage 2')
             <v-row align="center" dense>
 
               <v-col cols="3">
-                <ImageZoom
-                  alt="Page de connexion du nouveau site"
-                  src="assets/stage2/newLoginScreen.png"/>
+                <ImageZoom alt="Page de connexion du nouveau site" src="assets/stage2/newLoginScreen.png" />
               </v-col>
               <v-col cols="3">
-                <ImageZoom
-                  alt="Page de connexion de l'ancien site"
-                  src="assets/stage2/oldLoginScreen.png"/>
+                <ImageZoom alt="Page de connexion de l'ancien site" src="assets/stage2/oldLoginScreen.png" />
               </v-col>
               <v-col cols="3">
-                <ImageZoom
-                  alt="Code de la page de connexion 1"
-                  height="200"
-                  src="assets/stage2/code1LoginScreen.png"
-                />
+                <ImageZoom alt="Code de la page de connexion 1" height="200" src="assets/stage2/code1LoginScreen.png" />
               </v-col>
               <v-col cols="3">
-                <ImageZoom
-                  alt="Code de la page de connexion 2 - Formulaire de connexion"
-                  height="200"
-                  src="assets/stage2/code2LoginScreen.png"
-                />
+                <ImageZoom alt="Code de la page de connexion 2 - Formulaire de connexion" height="200"
+                  src="assets/stage2/code2LoginScreen.png" />
               </v-col>
             </v-row>
           </v-card-item>
@@ -384,10 +329,10 @@ useTitle('Rapport de stage 2')
           <v-card-item>
             <v-row>
               <v-col cols="3">
-                <ImageZoom
-                  alt="Composant liste"
-                  src="assets/stage2/composantListe.png"
-                />
+                <ImageZoom alt="Ancienne liste" src="assets/stage2/ancienneListe.png" />
+              </v-col>
+              <v-col cols="3">
+                <ImageZoom alt="Composant liste" src="assets/stage2/composantListe.png" />
               </v-col>
             </v-row>
           </v-card-item>
@@ -408,7 +353,7 @@ useTitle('Rapport de stage 2')
               site web m'a permis d'acquérir de nouvelles compétences et d'appliquer mes connaissances en technologies
               web modernes telles que Vue.js, Vuetify et TypeScript. Cette expérience m'a également donné l'opportunité
               d'explorer divers aspects de la sécurité informatique, renforçant ainsi ma compréhension des défis et des
-              exigences du domaine.</p><br/>
+              exigences du domaine.</p><br />
             <p>La méthodologie agile utilisée, combinée à des outils tels que Trello et GitLab, a facilité une
               collaboration efficace au sein de l'équipe. La communication directe a été un atout précieux pour résoudre
               rapidement les défis rencontrés. Je suis fier des réalisations accomplies pendant ce stage, notamment mon
